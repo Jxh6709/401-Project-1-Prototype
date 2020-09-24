@@ -40,6 +40,7 @@
 /*Custom Header styling*/
 .mdl-layout__header-row{
     background-color: white;
+    border-bottom: 1px solid black;
 }
 
 .mdl-layout-spacer h4{
@@ -52,7 +53,11 @@
     background: none;
     background-color: white;
     border: 1px solid black;
-    padding: 16px;
+    padding: 16px 32px;
     box-sizing: border-box;
     top: 12px;
+}
+
+.mdl-layout__header-row button:nth-child(2){
+    margin-left: 8px;
 }
