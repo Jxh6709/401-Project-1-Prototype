@@ -3,11 +3,36 @@
     height: 320px;
 }
 .demo-card-square > .mdl-card__title {
-    color: #fff;
-    background:
-        url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+    margin: auto;
+    width: 90%;
+    color: black;
+    background-color: aquamarine;
+   /* background:
+        url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;*/
 }
 
 .page-content {
     margin: 2em;
+}
+
+.view-pf-btn {
+    width: 100%;
+    color: #fff !important;
+    background-color: black !important;
+}
+
+.interest-tags {
+    margin-top: 1em;
+    overflow-x: scroll; 
+    overflow-y:hidden;
+    width: 300px;
+    white-space: nowrap;
+}
+
+.interest-tags button {
+    cursor: pointer;
+}
+
+.text-space {
+    margin-top: .5em;
 }
