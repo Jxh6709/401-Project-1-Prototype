@@ -7,3 +7,7 @@
     background:
         url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
 }
+
+.page-content {
+    margin: 2em;
+}
