@@ -36,3 +36,7 @@
 .text-space {
     margin-top: .5em;
 }
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
