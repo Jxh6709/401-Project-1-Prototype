@@ -14,5 +14,64 @@
 </head>
 
 <body>
-   
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <div class="mdl-layout-spacer">
+                <h4>Student portfolio portal</h4>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+        mdl-textfield--floating-label mdl-textfield--align-right">
+                <div class="mdc-touch-target-wrapper">
+                    <button class="mdc-button mdc-button--touch">
+                        <div class="mdc-button__ripple"></div>
+                        <span class="mdc-button__label">Contact us</span>
+                        <div class="mdc-button__touch"></div>
+                    </button>
+                </div>
+
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="content">
+        <div id="breadcrumb">
+            <p><a href="index.html">Home > </a>Add a portfolio</p>
+        </div>
+        
+        <h1>Add a portfolio</h1>
+        <h2>About you</h2>
+        
+        <div class="formline">
+            <form action="#">
+                <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" id="sample1">
+                    <label class="mdl-textfield__label" for="sample1">First name</label>
+                </div>
+            </form>
+            
+            <form action="#">
+                <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" id="sample1">
+                    <label class="mdl-textfield__label" for="sample1">Last name</label>
+                </div>
+            </form>
+        </div>
+        <div class="formline">
+            <select class="dropdown">
+                <option value="nmdbfa">New Media Design BFA</option>
+                <option value="nmdbs">New Media Interactive Development BS</option>
+                <option value="gdbfa">Graphic Design BFA</option>
+                <option value="vcdmfa">Visual Communication Design MFA</option>
+                <option value="3dddbfa">3D Digital Design BFA</option>
+                <option value="gddbs">Game Design and Development BS</option>
+                <option value="gddms">Game Design and Development MS</option>
+                <option value="idbfa">Industrial Design BFA</option>
+                <option value="idmfa">Industrial Design MFA</option>
+                <option value="intbfa">Interior Design BFA</option>
+            </select>
+        </div>
+    </div>
 </body>
