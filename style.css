@@ -2,12 +2,13 @@
     width: 320px;
     height: 320px;
 }
+
 .demo-card-square > .mdl-card__title {
     margin: auto;
     width: 90%;
     color: black;
     background-color: aquamarine;
-   /* background:
+    /* background:
         url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;*/
 }
 
@@ -23,8 +24,8 @@
 
 .interest-tags {
     margin-top: 1em;
-    overflow-x: scroll; 
-    overflow-y:hidden;
+    overflow-x: scroll;
+    overflow-y: hidden;
     width: 300px;
     white-space: nowrap;
 }
@@ -36,23 +37,26 @@
 .text-space {
     margin-top: .5em;
 }
+
 ::-webkit-scrollbar {
     width: 0px;
-    background: transparent; /* make scrollbar transparent */
+    background: transparent;
+    /* make scrollbar transparent */
 }
+
 /*Custom Header styling*/
-.mdl-layout__header-row{
+.mdl-layout__header-row {
     background-color: white;
     border-bottom: 1px solid black;
 }
 
-.mdl-layout-spacer h4{
+.mdl-layout-spacer h4 {
     color: black;
     font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans‑serif;
     font-weight: 900;
 }
 
-.mdl-layout__header-row button{
+.mdl-layout__header-row button {
     position: relative;
     background: none;
     background-color: white;
@@ -62,6 +66,35 @@
     top: 12px;
 }
 
-.mdl-layout__header-row button:nth-child(2){
+.mdl-layout__header-row button:nth-child(2) {
     margin-left: 8px;
+}
+
+/*link styling*/
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #F76902;
+}
+
+/*add page styling*/
+
+#content {
+    max-width: 60vw;
+    margin: 24px auto;
+}
+
+.formline {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+
+.flex-object {
+    margin-right: 12px;
+}
+
+br {
+    height: 32px;
 }
