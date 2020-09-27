@@ -1,0 +1,252 @@
+<!--add portfolio page-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RIT Student Portfolio Portal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+
+<body>
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <div class="mdl-layout-spacer">
+                <h4>Student portfolio portal</h4>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+        mdl-textfield--floating-label mdl-textfield--align-right">
+                <div class="mdc-touch-target-wrapper">
+                    <a href="/contact.html">
+                        <button class="mdc-button mdc-button--touch">
+                            <div class="mdc-button__ripple"></div>
+                            <span class="mdc-button__label">Contact us</span>
+                            <div class="mdc-button__touch"></div>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="content">
+        <div id="breadcrumb">
+            <p><a href="index.html">Home > </a>Add a portfolio</p>
+        </div>
+
+        <h3>Add a portfolio</h3>
+        <h4>About you</h4>
+
+        <div class="formline">
+            <div class="flex-object">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="firstname">
+                    <label class="mdl-textfield__label" for="firstname">First name</label>
+                </div>
+            </div>
+
+            <div class="flex-object">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="lastname">
+                    <label class="mdl-textfield__label" for="lastname">Last name</label>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="formline">
+            <div class="flex-object">
+                <select class="dropdown">
+                    <option value="">Major</option>
+                    <option value="nmdbfa">New Media Design BFA</option>
+                    <option value="nmdbs">New Media Interactive Development BS</option>
+                    <option value="gdbfa">Graphic Design BFA</option>
+                    <option value="vcdmfa">Visual Communication Design MFA</option>
+                    <option value="3dddbfa">3D Digital Design BFA</option>
+                    <option value="gddbs">Game Design and Development BS</option>
+                    <option value="gddms">Game Design and Development MS</option>
+                    <option value="idbfa">Industrial Design BFA</option>
+                    <option value="idmfa">Industrial Design MFA</option>
+                    <option value="intbfa">Interior Design BFA</option>
+                    <option value="illbfa">Illustration BFA</option>
+                    <option value="apbfa">Advertising Photography BFA</option>
+                    <option value="pjbfa">Photojournalism BFA</option>
+                    <option value="fapbfa">Fine Arts Photography BFA</option>
+                    <option value="mpsbs">Motion Picture Science BS</option>
+                    <option value="fabfa">Film and Animation BFA</option>
+                    <option value="famfa">Film and Animation MFA</option>
+                    <option value="mismfa">Medical Illustration BFA</option>
+                    <option value="hcims">Human-Computer Interaction MS</option>
+                    <option value="csbs">Computer Science BS</option>
+                    <option value="sems">Software Engineering MS</option>
+                    <option value="hccbs">Human Centered Computing BS</option>
+                    <option value="adpr">Advertising and Public Relations</option>
+                    <option value="aasbs">Applied Arts and Sciences BS</option>
+                </select>
+            </div>
+
+            <div class="flex-object">
+                <select class="dropdown">
+                    <option value="">Year level</option>
+                    <option value="1">1st year</option>
+                    <option value="2">2nd year</option>
+                    <option value="3">3rd year</option>
+                    <option value="4">4th year</option>
+                    <option value="5">5th year</option>
+                </select>
+            </div>
+        </div>
+
+        <br>
+
+        <h4>Your portfolio</h4>
+
+        <div class="formline">
+            <div class="flex-object">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="portfolio">
+                    <label class="mdl-textfield__label" for="portfolio">Portfolio link</label>
+                </div>
+            </div>
+        </div>
+
+        <div id="formline">
+            <div class="flex-object">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="thumbnail">
+                    <label class="mdl-textfield__label" for="thumbnail">Thumbnail image link (must be 258 X 78 px @ 72 DPI)</label>
+                </div>
+            </div>
+        </div>
+
+        <h4>Your interests</h4>
+        <div class="formline">
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">UI design</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">UX Design</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">Front-end development</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">Motion design</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">Character animation</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">Mobile app development</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">Web development</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">Visual design</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">3D modeling</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">Typography</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">Graphic design</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">3D animation</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">2D animation</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">Stop-motion animation</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">Live action film</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">Advertising</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">Product design</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">Character design</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">Environment design</span>
+                </button>
+            </div>
+            <div class="flex-object">
+                <button type="button" class="mdl-chip">
+                    <span class="mdl-chip__text">Illustration</span>
+                </button>
+            </div>
+        </div>
+        <br>
+        <div class="formline">
+            <div class="flex-object">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                    Submit
+                </button>
+            </div>
+            <div class="flex-object">
+                <button class="mdl-button mdl-js-button mdl-button--raised">
+                    Cancel
+                </button>
+            </div>
+        </div>
+</body>
+
+<script>
+
+</script>
