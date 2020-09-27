@@ -65,3 +65,7 @@
 .mdl-layout__header-row button:nth-child(2){
     margin-left: 8px;
 }
+
+#moreMajor {display: none;}
+
+#moreInterest {display: none;}

@@ -88,6 +88,7 @@
                             Computer Science BS
                         </span>
                     </li>
+                    <span id="dotsMajor"></span><span id="moreMajor">
                     <li class="mdl-list__item">
                         <span class="mdl-list__item-primary-content">
                             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-digitalDesign">
@@ -298,12 +299,21 @@
                             Visual Communication Design MFA
                         </span>
                     </li>
-                </ul>
+                </ul> </span>
+                <button onclick="showMoreMajor()" id="showMoreMajor" class="mdl-button mdl-js-button mdl-button--raised">Show More</button>
             </nav>
             <span class="mdl-layout-title">Year Level</span>
             <nav class="mdl-navigation">
                 <ul class="demo-list-control mdl-list">
                     <li class="mdl-list__item">
+                        <!-- <span class="mdl-list__item-primary-action">
+                            1st Year
+                        </span>
+                        <span class="mdl-list__item-secondary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-1stYear">
+                                <input type="checkbox" id="list-1stYear" class="mdl-checkbox__input" />
+                              </label>
+                        </span> -->
                         <span class="mdl-list__item-primary-content">
                             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-1stYear">
                                 <input type="checkbox" id="list-1stYear" class="mdl-checkbox__input" />
@@ -344,6 +354,14 @@
                         </span>
                     </li>
                     <li class="mdl-list__item">
+                        <!-- <span class="mdl-list__item-primary-action">
+                            5th Year and Over
+                        </span>
+                        <span class="mdl-list__item-secondary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-1stYear">
+                                <input type="checkbox" id="list-1stYear" class="mdl-checkbox__input" />
+                              </label>
+                        </span> -->
                         <span class="mdl-list__item-primary-content">
                             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-5thYear">
                                 <input type="checkbox" id="list-5thYear" class="mdl-checkbox__input" />
@@ -398,6 +416,7 @@
                             Motion Design
                         </span>
                     </li>
+                    <span id="dotsInterest"></span><span id="moreInterest">
                     <li class="mdl-list__item">
                         <span class="mdl-list__item-primary-content">
                             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-characterAnimation">
@@ -518,7 +537,8 @@
                             Illustration
                         </span>
                     </li>
-                </ul>
+                </ul> </span>
+                <button onclick="showMoreInterest()" id="showMoreInterest" class="mdl-button mdl-js-button mdl-button--raised">Show More</button>
             </nav>
         </div>
         <main class="mdl-layout__content">
@@ -575,6 +595,39 @@
     </div>
     </main>
     </div>
+    <script>
+    function showMoreMajor() {
+        var dots = document.getElementById("dotsMajor");
+        var moreText = document.getElementById("moreMajor");
+        var btnText = document.getElementById("showMoreMajor");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Show more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Show less";
+            moreText.style.display = "inline";
+        }
+    }
+
+    function showMoreInterest() {
+        var dots = document.getElementById("dotsInterest");
+        var moreText = document.getElementById("moreInterest");
+        var btnText = document.getElementById("showMoreInterest");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Show more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Show less";
+            moreText.style.display = "inline";
+        }
+    }
+    </script>
 </body>
 
 </html>
