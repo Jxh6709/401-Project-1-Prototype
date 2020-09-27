@@ -101,3 +101,7 @@ br {
 #moreMajor {display: none;}
 
 #moreInterest {display: none;}
+
+.mdl-button mdl-js-button mdl-button--raised{
+    background-color:#212529;
+}
