@@ -36,7 +36,10 @@
 .text-space {
     margin-top: .5em;
 }
-
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
 /*Custom Header styling*/
 .mdl-layout__header-row{
     background-color: white;
@@ -45,7 +48,8 @@
 
 .mdl-layout-spacer h4{
     color: black;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans‑serif
+    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans‑serif;
+    font-weight: 900;
 }
 
 .mdl-layout__header-row button{
