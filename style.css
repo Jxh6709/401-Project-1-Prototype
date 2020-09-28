@@ -61,7 +61,7 @@
     background: none;
     color: #fff;
     font-size: 16px;
-    font-family: HelveticaNeue-Light, Helvetica Neue Light,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     background-color: #f76902;
     border: none;
     border: 3px solid transparent;
@@ -72,34 +72,34 @@
     font-weight: 800;
 }
 
-.mdl-layout__header-row button:hover{
+.mdl-layout__header-row button:hover {
     cursor: pointer;
     background-color: #c75300;
     border: 3px solid transparent;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
 
 /* Contact button */
-#contact{
+#contact {
     background-color: #eaeaea;
     color: #212529;
     border: solid 2px #eaeaea;
     font-weight: 400;
     border: 3px solid transparent;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
 
-#contact:hover{
+#contact:hover {
     background-color: #b2b2b2;
 }
 
 
-div .mdl-layout__drawer-button{
+div .mdl-layout__drawer-button {
     background-color: white !important;
     border: none;
 }
 
-.material-icons{
+.material-icons {
     color: #212529;
 }
 
@@ -121,12 +121,12 @@ div .mdl-layout__drawer-button{
     margin-top: -24px;
 }
 
-#showMoreMajor{
+#showMoreMajor {
     margin-bottom: 36px;
 }
 
-/*general link styling*/
-a {
+/*breadcrumb link styling*/
+#breadcrumb a {
     text-decoration: none;
     font-weight: bold;
     color: #F76902;
@@ -152,22 +152,59 @@ a {
 br {
     height: 32px;
 }
-#moreMajor {display: none;}
 
-#moreInterest {display: none;}
+#moreMajor {
+    display: none;
+}
 
-.mdl-button mdl-js-button mdl-button--raised{
-    background-color:#212529;
+#moreInterest {
+    display: none;
+}
+
+.mdl-button mdl-js-button mdl-button--raised {
+    background-color: #212529;
+}
+
+#submitButton {
+    background-color: #F76902;
+    box-shadow: none;
+    font-weight: bold;
+}
+
+#submitButton:hover {
+    background-color: #c75300;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+
+#cancelButton {
+    background-color: #eaeaea;
+    box-shadow: none;
+}
+
+#cancelButton:hover {
+    background-color: #b2b2b2;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+
+button.mdl-chip:focus {
+    background-color: #F76902;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+input.mdl-textfield__inputfull, textarea.mdl-textfield__inputfull, label.mdl-textfield__labelfull{
+    width: 60vw;
 }
 
 /*card design*/
-.mdl-card__title{
+.mdl-card__title {
     background-color: #f76902 !important;
     color: white !important;
 }
-.demo-card-square{
+
+.demo-card-square {
     margin-bottom: 32px !important;
     float: left;
     margin-left: 32px;
 }
-

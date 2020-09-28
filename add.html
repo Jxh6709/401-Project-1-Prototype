@@ -9,7 +9,7 @@
     <title> RIT Student Portfolio Portal</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_orange-orange.min.css" />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 
@@ -114,8 +114,8 @@
         <div class="formline">
             <div class="flex-object">
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="portfolio">
-                    <label class="mdl-textfield__label" for="portfolio">Portfolio link</label>
+                    <input class="mdl-textfield__input mdl-textfield__inputfull" type="text" id="portfolio">
+                    <label class="mdl-textfield__label mdl-textfield__labelfull" for="portfolio">Portfolio link</label>
                 </div>
             </div>
         </div>
@@ -123,8 +123,8 @@
         <div id="formline">
             <div class="flex-object">
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="thumbnail">
-                    <label class="mdl-textfield__label" for="thumbnail">Thumbnail image link (must be 258 X 78 px @ 72 DPI)</label>
+                    <input class="mdl-textfield__input mdl-textfield__inputfull" type="text" id="thumbnail">
+                    <label class="mdl-textfield__label mdl-textfield__labelfull" for="thumbnail">Thumbnail image link (must be 258 X 78 px @ 72 DPI)</label>
                 </div>
             </div>
         </div>
@@ -235,12 +235,12 @@
         <br>
         <div class="formline">
             <div class="flex-object">
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                <button id="submitButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
                     Submit
                 </button>
             </div>
             <div class="flex-object">
-                <button class="mdl-button mdl-js-button mdl-button--raised">
+                <button id="cancelButton" class="mdl-button mdl-js-button mdl-button--raised">
                     Cancel
                 </button>
             </div>
