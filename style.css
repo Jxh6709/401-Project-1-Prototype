@@ -59,16 +59,57 @@
 .mdl-layout__header-row button {
     position: relative;
     background: none;
-    background-color: white;
-    border: 1px solid black;
-    padding: 16px 32px;
+    color: #fff;
+    font-size: 16px;
+    font-family: HelveticaNeue-Light, Helvetica Neue Light,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    background-color: #f76902;
+    border: none;
+    border: 3px solid transparent;
+    padding: 6px 12px;
+    margin: 4px;
     box-sizing: border-box;
     top: 12px;
+    font-weight: 800;
 }
 
-.mdl-layout__header-row button:nth-child(2) {
-    margin-left: 8px;
+.mdl-layout__header-row button:hover{
+    cursor: pointer;
+    background-color: #c75300;
+    border: 3px solid transparent;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 }
+
+/* Contact button */
+#contact{
+    background-color: #eaeaea;
+    color: #212529;
+    border: solid 2px #eaeaea;
+    font-weight: 400;
+    border: 3px solid transparent;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+#contact:hover{
+    background-color: #b2b2b2;
+}
+
+
+div .mdl-layout__drawer-button{
+    background-color: white !important;
+    border: none;
+}
+
+.material-icons{
+    color: #212529;
+}
+
+.mdl-layout__header-row {
+    background-color: white;
+    color: black;
+    border: 1px solid #dee2e6;
+}
+
+
 
 /*link styling*/
 a {
@@ -78,7 +119,6 @@ a {
 }
 
 /*add page styling*/
-
 #content {
     max-width: 60vw;
     margin: 24px auto;
@@ -105,3 +145,15 @@ br {
 .mdl-button mdl-js-button mdl-button--raised{
     background-color:#212529;
 }
+
+/*card design*/
+.mdl-card__title{
+    background-color: #f76902 !important;
+    color: white !important;
+}
+.demo-card-square{
+    margin-bottom: 32px !important;
+    float: left;
+    margin-left: 32px;
+}
+
