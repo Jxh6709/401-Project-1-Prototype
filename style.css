@@ -109,9 +109,23 @@ div .mdl-layout__drawer-button{
     border: 1px solid #dee2e6;
 }
 
+/*filter styling*/
 
+.mdl-list__item-secondary-action {
+    position: absolute;
+    left: 48px;
+    max-width: 168px;
+}
 
-/*link styling*/
+.mdl-list {
+    margin-top: -24px;
+}
+
+#showMoreMajor{
+    margin-bottom: 36px;
+}
+
+/*general link styling*/
 a {
     text-decoration: none;
     font-weight: bold;
