@@ -161,10 +161,6 @@ br {
     display: none;
 }
 
-.mdl-button mdl-js-button mdl-button--raised {
-    background-color: #212529;
-}
-
 #submitButton {
     background-color: #F76902;
     box-shadow: none;
@@ -176,12 +172,12 @@ br {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
 
-#cancelButton {
+#cancelButton, .mdl-button mdl-js-button mdl-button--raised {
     background-color: #eaeaea;
     box-shadow: none;
 }
 
-#cancelButton:hover {
+#cancelButton:hover, .mdl-button mdl-js-button mdl-button--raised:hover {
     background-color: #b2b2b2;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
@@ -207,4 +203,8 @@ input.mdl-textfield__inputfull, textarea.mdl-textfield__inputfull, label.mdl-tex
     margin-bottom: 32px !important;
     float: left;
     margin-left: 32px;
+}
+
+.switcher {
+    color: rgba(0,0,0,.87);
 }
