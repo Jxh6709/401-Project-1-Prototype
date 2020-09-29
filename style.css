@@ -7,9 +7,9 @@
     margin: auto;
     width: 90%;
     color: black;
-    background-color: aquamarine;
-    /* background:
-        url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;*/
+    /* background-color: aquamarine; */
+    background:
+        url('./img/RIT_NMID.png') bottom right 15% no-repeat ;
 }
 
 .page-content {
@@ -195,8 +195,8 @@ input.mdl-textfield__inputfull, textarea.mdl-textfield__inputfull, label.mdl-tex
 
 /*card design*/
 .mdl-card__title {
-    background-color: #f76902 !important;
-    color: white !important;
+    /* background-color: #f76902 !important;
+    color: white !important; */
 }
 
 .demo-card-square {
