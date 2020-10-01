@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+}
+
 .demo-card-square.mdl-card {
     width: 320px;
     height: 320px;
@@ -79,6 +83,60 @@
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
 
+.ritheaderlogo{
+    position: relative;
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 16px;
+    display: none;
+}
+
+.ritheaderlogo img{
+    margin: auto;    
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.navritlogo{
+    display: block;
+}
+
+.ritbutton{
+    display: block;
+}
+
+.filterritbutton{
+    display: none;
+    height: auto;
+    padding: 12px;
+}
+
+.filterritbutton button{
+    background: none;
+    background-color: #c75300;
+    border: 3px solid transparent;
+    width: 100%;
+    padding: 4px 16px;
+    margin-bottom: 16px;
+}
+
+.filterritbutton button:first-child{
+    position: relative;
+    background: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    background-color: #f76902;
+    border: none;
+    border: 3px solid transparent;
+    padding: 6px 12px;
+    margin: 4px;
+    box-sizing: border-box;
+    top: 12px;
+    font-weight: 800;
+}
+
 /* Contact button */
 #contact {
     background-color: #eaeaea;
@@ -97,6 +155,7 @@
 div .mdl-layout__drawer-button {
     background-color: white !important;
     border: none;
+    position: relative;
 }
 
 .material-icons {
@@ -123,6 +182,10 @@ div .mdl-layout__drawer-button {
 
 #showMoreMajor {
     margin-bottom: 36px;
+}
+
+.mdl-list__item-secondary-action{
+    padding-top: 0px !important;
 }
 
 /*breadcrumb link styling*/
@@ -207,4 +270,36 @@ input.mdl-textfield__inputfull, textarea.mdl-textfield__inputfull, label.mdl-tex
 
 .switcher {
     color: rgba(0,0,0,.87);
+}
+
+
+
+
+/*Mobile view*/
+
+@media(max-width: 600px){
+    .demo-card-square {
+        margin-left: 0px;
+    }
+
+    .ritheaderlogo{
+        display: block;
+    }
+
+    .navritlogo{
+        display: none;
+    }
+
+    .ritbutton{
+        display: none;
+    }
+
+    .filterritbutton{
+        display: block;
+    }
+    
+    div .mdl-layout__drawer-button{
+        top: 64px;
+    }
+    
 }
