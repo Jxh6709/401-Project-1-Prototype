@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RIT Student Portfolio Portal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src = "./index.js"></script>
+</head>
+
+<body>
+    <!-- The drawer is always open in large screens. The header is always shown,
+  even in small screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+    mdl-layout--fixed-header">
+        <!-- header goes here -->
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <div class="mdl-layout-spacer">
+                    <h4>Student portfolio portal</h4>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+        mdl-textfield--floating-label mdl-textfield--align-right">
+                    <div class="mdc-touch-target-wrapper">
+                        <a href="./add.html">
+                            <button class="mdc-button mdc-button--touch">
+                                <div class="mdc-button__ripple"></div>
+                                <span class="mdc-button__label">Add portfolio</span>
+                                <div class="mdc-button__touch"></div>
+                            </button>
+                        </a>
+                        <a href="./contact.html">
+                            <button class="mdc-button mdc-button--touch contact" id="contact">
+                                <div class="mdc-button__ripple"></div>
+                                <span class="mdc-button__label">Contact us</span>
+                                <div class="mdc-button__touch"></div>
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title"><b>Filters</b></span>
+            <span class="mdl-layout-title">Major</span>
+            <nav class="mdl-navigation">
+                <ul class="demo-list-control mdl-list">
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-advertPubRelations">
+                                <input type="checkbox" id="list-advertPubRelations" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Advert and Public Relations
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-advertPhoto">
+                                <input type="checkbox" id="list-advertPhoto" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Advertising Photography BFA
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-ArtSci">
+                                <input type="checkbox" id="list-ArtSci" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Applied Arts and Sciences BS
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <a href="csMajors.html" class="switcher">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-csBS">
+                                <input type="checkbox" id="list-csBS" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Computer Science BS</a> 
+                        </span>
+                    </li>
+                    <span id="dotsMajor"></span><span id="moreMajor">
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-digitalDesign">
+                                <input type="checkbox" id="list-digitalDesign" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            3D Digital Design BFA
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-filmAnimationB">
+                                <input type="checkbox" id="list-filmAnimationB" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Film and Animation BFA
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-filmAnimationM">
+                                <input type="checkbox" id="list-filmAnimationM" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Film and Animation MFA
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-FineArtsPhoto">
+                                <input type="checkbox" id="list-FineArtsPhoto" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Fine Arts Photography BFA
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-FineArtsStudio">
+                                <input type="checkbox" id="list-FineArtsStudio" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Fine Arts Studio BFA
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-GDDBS">
+                                <input type="checkbox" id="list-GDDBS" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Game Design and Development BS
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-GDDMS">
+                                <input type="checkbox" id="list-GDDMS" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Game Design and Development MS
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-GraphicDesign">
+                                <input type="checkbox" id="list-GraphicDesign" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Graphic Design BFA
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-HCCBS">
+                                <input type="checkbox" id="list-HCCBS" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Human Centered Computing BS
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-HCCMS">
+                                <input type="checkbox" id="list-HCCMS" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Human-Computer Interaction MS
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-illistration">
+                                <input type="checkbox" id="list-illistration" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Illustration BFA
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-industrialDesignB">
+                                <input type="checkbox" id="list-industrialDesignB" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Industrial Design BFA
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-industrialDesignM">
+                                <input type="checkbox" id="list-industrialDesignM" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Industrial Design MFA
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-interiorDesign">
+                                <input type="checkbox" id="list-interiorDesign" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Interior Design BFA
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-medicalIllustration">
+                                <input type="checkbox" id="list-medicalIllustration" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Medical Illustration BFA
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-motionPictureScienc">
+                                <input type="checkbox" id="list-motionPictureScienc" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Motion Picture Science BS
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-NMD">
+                                <input type="checkbox" id="list-NMD" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            New Media Design BFA
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-NMID">
+                                <input type="checkbox" id="list-NMID" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            New Media Interactive Development BS
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-photojurnalism">
+                                <input type="checkbox" id="list-photojurnalism" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Photojournalism BFA
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-SE">
+                                <input type="checkbox" id="list-SE" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Software Engineering MS
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-visualCommunicationDesign">
+                                <input type="checkbox" id="list-visualCommunicationDesign" class="mdl-checkbox__input" />
+                              </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Visual Communication Design MFA
+                        </span>
+                    </li>
+                </ul> </span>
+                <button onclick="showMoreMajor()" id="showMoreMajor" class="mdl-button mdl-js-button mdl-button--raised">Show More</button>
+            </nav>
+            <span class="mdl-layout-title">Year Level</span>
+            <nav class="mdl-navigation">
+                <ul class="demo-list-control mdl-list">
+                    <li class="mdl-list__item">
+                        <!-- <span class="mdl-list__item-primary-action">
+                            1st Year
+                        </span>
+                        <span class="mdl-list__item-secondary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-1stYear">
+                                <input type="checkbox" id="list-1stYear" class="mdl-checkbox__input" />
+                              </label>
+                        </span> -->
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-1stYear">
+                                <input type="checkbox" id="list-1stYear" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            1st Year
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-2ndYear">
+                                <input type="checkbox" id="list-2ndYear" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            2nd Year
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-3rdYear">
+                                <input type="checkbox" id="list-3rdYear" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            3rd Year
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-4thYear">
+                                <input type="checkbox" id="list-4thYear" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            4th Year
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <!-- <span class="mdl-list__item-primary-action">
+                            5th Year and Over
+                        </span>
+                        <span class="mdl-list__item-secondary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-1stYear">
+                                <input type="checkbox" id="list-1stYear" class="mdl-checkbox__input" />
+                              </label>
+                        </span> -->
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-5thYear">
+                                <input type="checkbox" id="list-5thYear" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            5th Year and Over
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-undergrad">
+                                <input type="checkbox" id="list-undergrad" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Undergraduate
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-graduate">
+                                <input type="checkbox" id="list-graduate" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Graduate
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+            <span class="mdl-layout-title">Skills</span>
+            <nav class="mdl-navigation">
+                <ul class="demo-list-control mdl-list">
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-uiDesign">
+                                <input type="checkbox" id="list-uiDesign" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            UI Design
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-uxDesign">
+                                <input type="checkbox" id="list-uxDesign" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            UX Design
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-frontEnd">
+                                <input type="checkbox" id="list-frontEnd" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Front-end Development
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-motionDesign">
+                                <input type="checkbox" id="list-motionDesign" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Motion Design
+                        </span>
+                    </li>
+                    <span id="dotsInterest"></span><span id="moreInterest">
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-characterAnimation">
+                                <input type="checkbox" id="list-characterAnimation" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Character Animation
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-mobileAppDevelopment">
+                                <input type="checkbox" id="list-mobileAppDevelopment" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Mobile App Development
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-webDev">
+                                <input type="checkbox" id="list-webDev" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Web Development
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-visualDesign">
+                                <input type="checkbox" id="list-visualDesign" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Visual Design
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-3Dmodel">
+                                <input type="checkbox" id="list-3Dmodel" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            3D Modeling
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-2DAnimation">
+                                <input type="checkbox" id="list-2DAnimation" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            2D Animation
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-stopmotionAnimation">
+                                <input type="checkbox" id="list-stopmotionAnimation" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Stop-motion Animation
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-advertisting">
+                                <input type="checkbox" id="list-advertisting" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Advertising
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-productDesign">
+                                <input type="checkbox" id="list-productDesign" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Product Design
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-characterDesign">
+                                <input type="checkbox" id="list-characterDesign" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Character Design
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-environmentDesign">
+                                <input type="checkbox" id="list-environmentDesign" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Evironment Design
+                        </span>
+                    </li>
+                    <li class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-illustration">
+                                <input type="checkbox" id="list-illustration" class="mdl-checkbox__input" />
+                            </label>
+                        </span>
+                        <span class="mdl-list__item-secondary-action">
+                            Illustration
+                        </span>
+                    </li>
+                </ul> </span>
+                <button onclick="showMoreInterest()" id="showMoreInterest" class="mdl-button mdl-js-button mdl-button--raised">Show More</button>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <!-- Your content goes here -->
+                <div id = "cards"></div>
+  
+            </div>
+
+
+            </div>
+    </main>
+    </div>
+    <script>
+    function showMoreMajor() {
+        var dots = document.getElementById("dotsMajor");
+        var moreText = document.getElementById("moreMajor");
+        var btnText = document.getElementById("showMoreMajor");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Show more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Show less";
+            moreText.style.display = "inline";
+        }
+    }
+
+    function showMoreInterest() {
+        var dots = document.getElementById("dotsInterest");
+        var moreText = document.getElementById("moreInterest");
+        var btnText = document.getElementById("showMoreInterest");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Show more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Show less";
+            moreText.style.display = "inline";
+        }
+    }
+    </script>
+</body>
+
+</html>
+
