@@ -7,9 +7,10 @@
     <title> RIT Student Portfolio Portal</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_orange-orange.min.css" />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./index.js"></script>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 </head>
 
 <body>
@@ -24,9 +25,10 @@
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <div class="mdl-layout-spacer" style="display: flex;">
-                    <img class="navritlogo" src="img/RIT_Logo.png" style="padding-top: 24px; padding-right: 16px;"
-                        width="76px" height="28px" alt="RIT Logo">
-                    <a style="text-decoration: none;" href="index.html"><h4>Student portfolio portal</h4></a>
+                    <img class="navritlogo" src="img/RIT_Logo.png" style="padding-top: 24px; padding-right: 16px;" width="76px" height="28px" alt="RIT Logo">
+                    <a style="text-decoration: none;" href="index.html">
+                        <h4>Student portfolio portal</h4>
+                    </a>
                 </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
         mdl-textfield--floating-label mdl-textfield--align-right">
@@ -72,14 +74,20 @@
                     </a>
                 </div>
             </div>
-            <span class="mdl-layout-title"><b>Filters</b></span>
+            <div class="searchfield" id="namesearch">
+                <i class="material-icons searchIcon">search</i>
+                <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text">
+                    <label class="mdl-textfield__label" for="user">Search by name</label>
+                </div>
+            </div>
+            <span class="mdl-layout-title boldtitle"><b>Filters</b></span>
             <span class="mdl-layout-title">Major</span>
             <nav class="mdl-navigation">
                 <ul class="demo-list-control mdl-list">
                     <li class="mdl-list__item">
                         <span class="mdl-list__item-primary-content">
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                for="list-advertPubRelations">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-advertPubRelations">
                                 <input type="checkbox" id="list-advertPubRelations" class="mdl-checkbox__input" />
                             </label>
                         </span>
@@ -114,15 +122,14 @@
                                     <input type="checkbox" id="list-csBS" class="mdl-checkbox__input" />
                                 </label>
                         </span>
-                        <span class="mdl-list__item-secondary-action">
+                        <span class="mdl-list__item-secondary-action protoFilter">
                             Computer Science BS</a>
                         </span>
                     </li>
                     <span id="dotsMajor"></span><span id="moreMajor">
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-digitalDesign">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-digitalDesign">
                                     <input type="checkbox" id="list-digitalDesign" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -132,8 +139,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-filmAnimationB">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-filmAnimationB">
                                     <input type="checkbox" id="list-filmAnimationB" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -143,8 +149,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-filmAnimationM">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-filmAnimationM">
                                     <input type="checkbox" id="list-filmAnimationM" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -154,8 +159,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-FineArtsPhoto">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-FineArtsPhoto">
                                     <input type="checkbox" id="list-FineArtsPhoto" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -165,8 +169,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-FineArtsStudio">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-FineArtsStudio">
                                     <input type="checkbox" id="list-FineArtsStudio" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -196,8 +199,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-GraphicDesign">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-GraphicDesign">
                                     <input type="checkbox" id="list-GraphicDesign" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -227,8 +229,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-illistration">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-illistration">
                                     <input type="checkbox" id="list-illistration" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -238,8 +239,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-industrialDesignB">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-industrialDesignB">
                                     <input type="checkbox" id="list-industrialDesignB" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -249,8 +249,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-industrialDesignM">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-industrialDesignM">
                                     <input type="checkbox" id="list-industrialDesignM" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -260,8 +259,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-interiorDesign">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-interiorDesign">
                                     <input type="checkbox" id="list-interiorDesign" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -271,8 +269,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-medicalIllustration">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-medicalIllustration">
                                     <input type="checkbox" id="list-medicalIllustration" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -282,8 +279,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-motionPictureScienc">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-motionPictureScienc">
                                     <input type="checkbox" id="list-motionPictureScienc" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -313,8 +309,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-photojurnalism">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-photojurnalism">
                                     <input type="checkbox" id="list-photojurnalism" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -334,10 +329,8 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-visualCommunicationDesign">
-                                    <input type="checkbox" id="list-visualCommunicationDesign"
-                                        class="mdl-checkbox__input" />
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-visualCommunicationDesign">
+                                    <input type="checkbox" id="list-visualCommunicationDesign" class="mdl-checkbox__input" />
                                 </label>
                             </span>
                             <span class="mdl-list__item-secondary-action">
@@ -345,9 +338,9 @@
                             </span>
                         </li>
                 </ul> </span>
-                <button onclick="showMoreMajor()" id="showMoreMajor"
-                    class="mdl-button mdl-js-button mdl-button--raised">Show More</button>
+                <button onclick="showMoreMajor()" id="showMoreMajor" class="mdl-button mdl-js-button mdl-button--raised">Show More</button>
             </nav>
+            <br>
             <span class="mdl-layout-title">Year Level</span>
             <nav class="mdl-navigation">
                 <ul class="demo-list-control mdl-list">
@@ -485,8 +478,7 @@
                     <span id="dotsInterest"></span><span id="moreInterest">
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-characterAnimation">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-characterAnimation">
                                     <input type="checkbox" id="list-characterAnimation" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -496,8 +488,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-mobileAppDevelopment">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-mobileAppDevelopment">
                                     <input type="checkbox" id="list-mobileAppDevelopment" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -517,8 +508,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-visualDesign">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-visualDesign">
                                     <input type="checkbox" id="list-visualDesign" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -548,8 +538,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-stopmotionAnimation">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-stopmotionAnimation">
                                     <input type="checkbox" id="list-stopmotionAnimation" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -559,8 +548,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-advertisting">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-advertisting">
                                     <input type="checkbox" id="list-advertisting" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -570,8 +558,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-productDesign">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-productDesign">
                                     <input type="checkbox" id="list-productDesign" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -581,8 +568,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-characterDesign">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-characterDesign">
                                     <input type="checkbox" id="list-characterDesign" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -592,8 +578,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-environmentDesign">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-environmentDesign">
                                     <input type="checkbox" id="list-environmentDesign" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -603,8 +588,7 @@
                         </li>
                         <li class="mdl-list__item">
                             <span class="mdl-list__item-primary-content">
-                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
-                                    for="list-illustration">
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-illustration">
                                     <input type="checkbox" id="list-illustration" class="mdl-checkbox__input" />
                                 </label>
                             </span>
@@ -613,8 +597,8 @@
                             </span>
                         </li>
                 </ul> </span>
-                <button onclick="showMoreInterest()" id="showMoreInterest"
-                    class="mdl-button mdl-js-button mdl-button--raised">Show More</button>
+                <button onclick="showMoreInterest()" id="showMoreInterest" class="mdl-button mdl-js-button mdl-button--raised">Show More</button>
+                <br>
             </nav>
         </div>
         <main class="mdl-layout__content">
@@ -658,6 +642,7 @@
                 moreText.style.display = "inline";
             }
         }
+
     </script>
 </body>
 

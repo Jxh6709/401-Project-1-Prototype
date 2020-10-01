@@ -170,6 +170,22 @@ div .mdl-layout__drawer-button {
 
 /*filter styling*/
 
+.searchfield {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+}
+
+.searchIcon {
+    padding: 0 6px 0 0;
+}
+
+span.protoFilter {
+    margin-top: -8px;
+    font-weight: normal;
+}
+
 .mdl-list__item-secondary-action {
     position: absolute;
     left: 48px;
@@ -180,8 +196,23 @@ div .mdl-layout__drawer-button {
     margin-top: -24px;
 }
 
+.boldtitle {
+    color: #000000;
+}
+
 #showMoreMajor {
     margin-bottom: 36px;
+}
+
+#showMoreMajor, #showMoreInterest {
+    box-shadow: none;
+    text-align: left;
+    text-transform: lowercase;
+    font-style: italic;
+    border-top: 1px solid #666666;
+    color: #666666;
+    background: none;
+    margin: 0 12px;
 }
 
 .mdl-list__item-secondary-action{
