@@ -1,4 +1,4 @@
-a{
+a {
     text-decoration: none;
 }
 
@@ -13,7 +13,7 @@ a{
     color: black;
     /* background-color: aquamarine; */
     background:
-        url('./img/RIT_NMID.png') bottom right 15% no-repeat ;
+        url('./img/RIT_NMID.png') bottom right 15% no-repeat;
 }
 
 .page-content {
@@ -52,6 +52,11 @@ a{
 .mdl-layout__header-row {
     background-color: white;
     border-bottom: 1px solid black;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 2px 2px #cccccc;
 }
 
 .mdl-layout-spacer h4 {
@@ -83,7 +88,7 @@ a{
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
 
-.ritheaderlogo{
+.ritheaderlogo {
     position: relative;
     width: 100%;
     margin-bottom: 32px;
@@ -91,28 +96,28 @@ a{
     display: none;
 }
 
-.ritheaderlogo img{
-    margin: auto;    
+.ritheaderlogo img {
+    margin: auto;
     position: absolute;
     left: 0;
     right: 0;
 }
 
-.navritlogo{
+.navritlogo {
     display: block;
 }
 
-.ritbutton{
+.ritbutton {
     display: block;
 }
 
-.filterritbutton{
+.filterritbutton {
     display: none;
     height: auto;
     padding: 12px;
 }
 
-.filterritbutton button{
+.filterritbutton button {
     background: none;
     background-color: #c75300;
     border: 3px solid transparent;
@@ -121,7 +126,7 @@ a{
     margin-bottom: 16px;
 }
 
-.filterritbutton button:first-child{
+.filterritbutton button:first-child {
     position: relative;
     background: none;
     color: #fff;
@@ -170,8 +175,13 @@ div .mdl-layout__drawer-button {
 
 /*filter styling*/
 
+.mdl-layout__drawer {
+    margin-top: 66px;
+    position: absolute;
+}
+
 .searchfield {
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     padding: 12px;
@@ -204,7 +214,8 @@ span.protoFilter {
     margin-bottom: 36px;
 }
 
-#showMoreMajor, #showMoreInterest {
+#showMoreMajor,
+#showMoreInterest {
     box-shadow: none;
     text-align: left;
     text-transform: lowercase;
@@ -215,7 +226,7 @@ span.protoFilter {
     margin: 0 12px;
 }
 
-.mdl-list__item-secondary-action{
+.mdl-list__item-secondary-action {
     padding-top: 0px !important;
 }
 
@@ -266,12 +277,14 @@ br {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
 
-#cancelButton, .mdl-button mdl-js-button mdl-button--raised {
+#cancelButton,
+.mdl-button mdl-js-button mdl-button--raised {
     background-color: #eaeaea;
     box-shadow: none;
 }
 
-#cancelButton:hover, .mdl-button mdl-js-button mdl-button--raised:hover {
+#cancelButton:hover,
+.mdl-button mdl-js-button mdl-button--raised:hover {
     background-color: #b2b2b2;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
@@ -283,7 +296,9 @@ button.mdl-chip:focus {
     box-shadow: none;
 }
 
-input.mdl-textfield__inputfull, textarea.mdl-textfield__inputfull, label.mdl-textfield__labelfull{
+input.mdl-textfield__inputfull,
+textarea.mdl-textfield__inputfull,
+label.mdl-textfield__labelfull {
     width: 60vw;
 }
 
@@ -300,7 +315,7 @@ input.mdl-textfield__inputfull, textarea.mdl-textfield__inputfull, label.mdl-tex
 }
 
 .switcher {
-    color: rgba(0,0,0,.87);
+    color: rgba(0, 0, 0, .87);
 }
 
 
@@ -308,29 +323,41 @@ input.mdl-textfield__inputfull, textarea.mdl-textfield__inputfull, label.mdl-tex
 
 /*Mobile view*/
 
-@media(max-width: 600px){
+@media(max-width: 600px) {
     .demo-card-square {
         margin-left: 0px;
     }
 
-    .ritheaderlogo{
+    .ritheaderlogo {
         display: block;
     }
 
-    .navritlogo{
+    .navritlogo {
         display: none;
     }
 
-    .ritbutton{
+    .ritbutton {
         display: none;
     }
 
-    .filterritbutton{
+    .filterritbutton {
         display: block;
     }
-    
-    div .mdl-layout__drawer-button{
+
+    div .mdl-layout__drawer-button {
         top: 64px;
     }
-    
+
+}
+
+/*fixing z-index for tablet and mobile viewports*/
+
+@media(max-width: 1024px) {
+    .mdl-layout__header-row {
+        z-index: 0;
+    }
+
+    .mdl-layout__drawer {
+        margin-top: 0px;
+    }
 }
