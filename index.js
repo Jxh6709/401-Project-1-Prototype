@@ -1,9 +1,15 @@
+let numCardsToMake = 24;
+
 window.onload = () =>  {
     const content = document.querySelector("#cards");
 
+    content.innerHTML = makeCards(numCardsToMake);
+}
+
+const makeCards = () => {
     let cardTags = "";
 
-    for (let i = 0; i < 24; i++) {
+    for (let i = 0; i < numCardsToMake; i++) {
         cardTags += `<div class="thecards"> 
         
         <div class="demo-card-square mdl-card mdl-shadow--2dp">
@@ -40,10 +46,29 @@ window.onload = () =>  {
                         <span class="mdl-chip__text">#Typography</span>
                     </button>
                 </div>
-            </div> 
-        </div>`;
+            </div> `;
+            if (window.location.pathname.includes("admin")) {
+                cardTags += 
+                    `<div class = "admin-btns">
+                        <button class="mdl-button mdl-js-button mdl-button--raised edit-btn">
+                            Edit Listing
+                        </button>
+                        <button onclick="makeNewCards()" class="remove-btn mdl-button mdl-js-button mdl-button--raised">
+                            Remove Listing
+                        </button>
+                    </div>`;
+            }
+        cardTags+=`</div>`;
     }
-    content.innerHTML = cardTags;
+    numCardsToMake--;
+
+    return cardTags;
+}
+
+const makeNewCards = () => {
+    const content = document.querySelector("#cards");
+
+    content.innerHTML = makeCards(numCardsToMake);
 }
 
 function onKonamiCode(cb) {

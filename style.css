@@ -3,8 +3,8 @@ a {
 }
 
 .demo-card-square.mdl-card {
-    width: 320px;
-    height: 320px;
+    width: 350px;
+    height: 350px;
 }
 
 .demo-card-square > .mdl-card__title {
@@ -318,8 +318,17 @@ label.mdl-textfield__labelfull {
     color: rgba(0, 0, 0, .87);
 }
 
-
-
+.admin-btns {
+    margin: auto;
+}
+.remove-btn {
+    background-color: red !important;
+    color: #fff !important;
+}
+.edit-btn {
+    background-color: #888 !important;
+    color: #fff !important;
+}
 
 /*Mobile view*/
 
