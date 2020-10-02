@@ -252,6 +252,7 @@ span.protoFilter {
 
 .flex-object {
     margin-right: 12px;
+    margin-bottom: 6px;
 }
 
 br {
@@ -302,6 +303,12 @@ label.mdl-textfield__labelfull {
     width: 60vw;
 }
 
+select.dropdown {
+    padding: 12px;
+    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans‑serif;
+    border: 1px solid #727578;
+}
+
 /*card design*/
 .mdl-card__title {
     /* background-color: #f76902 !important;
@@ -348,6 +355,10 @@ label.mdl-textfield__labelfull {
         top: 64px;
     }
 
+    div.mobileheader-nofilter {
+        margin: 0 auto;
+    }
+
 }
 
 /*fixing z-index for tablet and mobile viewports*/
@@ -359,5 +370,16 @@ label.mdl-textfield__labelfull {
 
     .mdl-layout__drawer {
         margin-top: 0px;
+    }
+}
+
+/*sizes message box on contact page for large screens*/
+
+@media(min-width: 1175px) {
+
+    input.mdl-textfield__inputfull,
+    textarea.mdl-textfield__inputfull,
+    label.mdl-textfield__labelfull {
+        width: 35vw;
     }
 }

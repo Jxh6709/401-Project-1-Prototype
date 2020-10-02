@@ -14,75 +14,84 @@
 </head>
 
 <body>
-    <div class="ritheaderlogo">
-        <a href="https://www.rit.edu/"><img src="img/RIT_Logo.png" width="76px" height="28px" alt="RIT Logo"></a>
-    </div>
-    <header class="mdl-layout__header">
-        <div class="mdl-layout__header-row">
-            <div class="mdl-layout-spacer" style="display: flex;">
-                <img class="navritlogo" src="img/RIT_Logo.png" style="padding-top: 24px; padding-right: 16px;"
-                    width="76px" height="28px" alt="RIT Logo">
-                <a style="text-decoration: none;" href="index.html"><h4>Student portfolio portal</h4></a>
-            </div>
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+    mdl-layout--fixed-header">
+        <div class="ritheaderlogo">
+            <a href="https://www.rit.edu/"><img src="img/RIT_Logo.png" width="76px" height="28px" alt="RIT Logo"></a>
+        </div>
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <div class="mdl-layout-spacer" style="display: flex;">
+                    <img class="navritlogo" src="img/RIT_Logo.png" style="padding-top: 24px; padding-right: 16px;" width="76px" height="28px" alt="RIT Logo">
+                    <div class="mobileheader-nofilter">
+                        <a style="text-decoration: none;" href="index.html">
+                            <h4>Student portfolio portal</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
         mdl-textfield--floating-label mdl-textfield--align-right">
-                <div class="mdc-touch-target-wrapper">
-                    <a href="/add.html">
-                        <button class="mdc-button mdc-button--touch">
-                            <div class="mdc-button__ripple"></div>
-                            <span class="mdc-button__label">Add portfolio</span>
-                            <div class="mdc-button__touch"></div>
-                        </button>
-                    </a>
-                </div>
+                    <div class="ritbutton">
+                        <div class="mdc-touch-target-wrapper">
+                            <a href="/add.html">
+                                <button class="mdc-button mdc-button--touch">
+                                    <div class="mdc-button__ripple"></div>
+                                    <span class="mdc-button__label">Add portfolio</span>
+                                    <div class="mdc-button__touch"></div>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
 
-                <div class="mdl-textfield__expandable-holder">
-                    <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div id="content">
-        <div id="breadcrumb">
-            <p><a href="index.html">Home > </a>Contact us</p>
-        </div>
-
-        <h3>Contact us</h3>
-        <p>If you have any questions, email Professor Adam Smith at <b>adam.smith@rit.edu</b> using the form below.</p>
-
-        <div class="formline">
-            <div class="flex-object">
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="firstname">
-                    <label class="mdl-textfield__label" for="firstname">First name</label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
+                    </div>
                 </div>
             </div>
+        </header>
 
-            <div class="flex-object">
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="lastname">
-                    <label class="mdl-textfield__label" for="lastname">Last name</label>
+        <div id="content">
+            <div id="breadcrumb">
+                <p><a href="index.html">Home > </a>Contact us</p>
+            </div>
+
+            <h3>Contact us</h3>
+            <p>If you have any questions, email Professor Adam Smith at <b>adam.smith@rit.edu</b> using the form below.</p>
+
+            <div class="formline">
+                <div class="flex-object">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="firstname">
+                        <label class="mdl-textfield__label" for="firstname">First name</label>
+                    </div>
+                </div>
+
+                <div class="flex-object">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="lastname">
+                        <label class="mdl-textfield__label" for="lastname">Last name</label>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <textarea class="mdl-textfield__input mdl-textfield__inputfull" type="text" rows="1" id="message"></textarea>
-            <label class="mdl-textfield__label mdl-textfield__labelfull" for="schools">Message</label>
-        </div>
-    
-        <br>
-        <div class="formline">
-            <div class="flex-object">
-                <button id="submitButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                    Submit
-                </button>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <textarea class="mdl-textfield__input mdl-textfield__inputfull" type="text" rows="1" id="message"></textarea>
+                <label class="mdl-textfield__label mdl-textfield__labelfull" for="schools">Message</label>
             </div>
-            <div class="flex-object">
-                <button id="cancelButton" class="mdl-button mdl-js-button mdl-button--raised">
-                    Cancel
-                </button>
+
+            <br>
+            <br>
+            <div class="formline">
+                <div class="flex-object">
+                    <button id="submitButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                        Submit
+                    </button>
+                </div>
+                <div class="flex-object">
+                    <button id="cancelButton" class="mdl-button mdl-js-button mdl-button--raised">
+                        Cancel
+                    </button>
+                </div>
             </div>
         </div>
     </div>
