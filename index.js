@@ -1,9 +1,9 @@
 let numCardsToMake = 24;
-
+let showAdmin = false;
 window.onload = () =>  {
     const content = document.querySelector("#cards");
 
-    content.innerHTML = makeCards(numCardsToMake);
+    content.innerHTML = makeCards();
 }
 
 const makeCards = () => {
@@ -47,7 +47,7 @@ const makeCards = () => {
                     </button>
                 </div>
             </div> `;
-            if (window.location.pathname.includes("admin")) {
+            if (showAdmin) {
                 cardTags += 
                     `<div class = "admin-btns">
                         <button class="mdl-button mdl-js-button mdl-button--raised edit-btn">
@@ -85,7 +85,10 @@ function onKonamiCode(cb) {
   }
   
 onKonamiCode(function () {
-    let atag = document.createElement("a");
-    atag.href = "./admin.html";
-    atag.click();
+    // let atag = document.createElement("a");
+    // atag.href = "./admin.html";
+    // atag.click();
+
+    showAdmin = !showAdmin;
+    makeNewCards();
 })
