@@ -327,6 +327,7 @@ select.dropdown {
 
 .admin-btns {
     margin: auto;
+    margin-bottom: .5em;
 }
 .remove-btn {
     background-color: red !important;
