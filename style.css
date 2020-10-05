@@ -255,6 +255,11 @@ span.protoFilter {
     margin-bottom: 6px;
 }
 
+ul.mdl-list {
+    margin-left: -12px;
+    margin-top: 12px;
+}
+
 br {
     height: 32px;
 }
